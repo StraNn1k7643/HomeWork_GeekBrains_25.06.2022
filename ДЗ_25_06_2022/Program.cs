@@ -1,4 +1,4 @@
-﻿ДЗ задача№2
+﻿//ДЗ задача№2
 Console.WriteLine("Введите первое число ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число ");
@@ -18,7 +18,7 @@ if ( number1 > number2 )
 
 
 
-ДЗ задача№4
+// ДЗ задача№4
 Console.WriteLine("Введите первое число ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число ");
@@ -52,3 +52,23 @@ else
 {
     Console.Write("Число не чётное");
 }
+
+
+
+
+
+
+//Задача№8
+Console.WriteLine("Введите число: ");
+int N = int.Parse(Console.ReadLine());
+    
+for (int i = 1; i <= N; i++)
+    if (i % 2 == 0)
+        Console.WriteLine(i);
+   
+     
+
+
+
+
+
