@@ -7,7 +7,8 @@ Console.Write($"Введи число М(количество чисел): ");
 int m = Convert.ToInt32(Console.ReadLine());
 int[] massiveNumbers = new int[m];
 
-void InputNumbers(int m){
+void InputNumbers(int m)
+{
 for (int i = 0; i < m; i++)
   {
     Console.Write($"Введи {i+1} число: ");
@@ -18,11 +19,10 @@ for (int i = 0; i < m; i++)
 
 int Comparison(int[] massiveNumbers)
 {
-    
+  int count = 0;
+  for (int i = 0; i < massiveNumbers.Length; i++)
   {
-    
-    if(massiveNumbers[i] > 0 ) 
-    count += 1; 
+    if(massiveNumbers[i] > 0 ) count += 1; 
   }
   return count;
 }
@@ -31,13 +31,9 @@ InputNumbers(m);
 
 Console.WriteLine($"Введено чисел больше 0: {Comparison(massiveNumbers)} ");
 
-// Задача 43. Напишите программу, которая найдёт точку пересечения двух прямых, 
-//заданных уравнениями y = k1 * x + b1, y = k2 * x + b2;
-// значения b1, k1, b2 и k2 задаются пользователем.
+// Задача 43. Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; 5,5)
 
-
-Console.WriteLine($"\nЗадача 43.  Найти точку пересечения двух прямых \n");
 
 double[,] coeff = new double[2, 2];
 double[] crossPoint = new double[2];
